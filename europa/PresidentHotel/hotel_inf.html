@@ -1,0 +1,67 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hotel</title>
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="../../gall_app/galleria-1.2.2.min.js"></script>
+<script>
+var x = false;
+function MenuSlide() {
+	if (x == false) {
+		x=true;
+		$('#leftslidemenu').animate({marginLeft:152},800).animate({opacity:0.95},500);
+	}
+	else {
+		x=false;
+		$('#leftslidemenu').animate({opacity:0.75},500).animate({marginLeft:-1},400);
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="leftslidemenu">
+        <a href="../../EUhotels.html"><h2>К отелям</h2></a>
+        <a href="../../index.html"><h2>На главную</h2></a>
+      <div id="butt" onClick="MenuSlide()"><img src="../../index_img/ham.png" width="70px" height="70px"></div>            
+</div>
+<div class="HotelInfBlock">
+<h3 class="hotelname">President Hotel</h3>
+</div>
+<div class="content1">	
+<div id="galleria">
+            <img src="inf_img/1.jpg">
+            <img src="inf_img/2.jpg">
+            <img src="inf_img/3.jpg">
+            <img src="inf_img/4.jpg">
+            <img src="inf_img/5.jpg">
+            <img src="inf_img/6.jpg">
+            
+</div>
+</div>
+<div class="HotelInfBlock">
+<h5 style="font-size:17px;">Этот современный отель бизнес-класса расположен на берегу реки Влтавы, в центре Старого города Праги.<br>
+Элегантные просторные номера отеля President оснащены кондиционерами. В числе прочих удобств — мини-бар, гостиная зона и спутниковое телевидение. Из окон открывается вид на Пражский Град, реку или Старый город.<br>
+По утрам в ресторане отеля накрывают завтрак.<br>
+В ресторане Vltava с французскими окнами, из которых открывается панорамный вид на реку, подают блюда интернациональной кухни по чешским рецептам. В баре Piano с живой фортепианной музыкой можно заказать различные коктейли и другие напитки.<br>
+За дополнительную плату предоставляются места на охраняемой парковке, которая вмещает до 10 автомобилей. Помимо этого, гости отеля President могут заказать трансфер на лимузине.<br>
+Прогулка до Старого города занимает 1 минуту. Отель President находится рядом с Еврейским кварталом и торговой улицей Парижска. <br>
+Это любимая часть города Прага среди наших гостей согласно независимым отзывам.<br>
+Мы говорим на вашем языке!<br>
+President Hotel — принимает гостей с 31 июля 2005<br>
+Номеров в отеле: 130</h5>
+</div>
+<script>
+
+    Galleria.loadTheme('../../gall_app/galleria.classic.min.js');
+    $('#galleria').galleria();
+
+</script>
+</body>
+</html>

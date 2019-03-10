@@ -1,0 +1,69 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hotel</title>
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="../../gall_app/galleria-1.2.2.min.js"></script>
+<script>
+var x = false;
+function MenuSlide() {
+	if (x == false) {
+		x=true;
+		$('#leftslidemenu').animate({marginLeft:152},800).animate({opacity:0.95},500);
+	}
+	else {
+		x=false;
+		$('#leftslidemenu').animate({opacity:0.75},500).animate({marginLeft:-1},400);
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="leftslidemenu">
+        <a href="../../EUhotels.html"><h2>К отелям</h2></a>
+        <a href="../../index.html"><h2>На главную</h2></a>
+      <div id="butt" onClick="MenuSlide()"><img src="../../index_img/ham.png" width="70px" height="70px"></div>            
+</div>
+<div class="HotelInfBlock">
+<h3 class="hotelname">Radisson Blu Alcron Hotel</h3>
+</div>
+<div class="content1">	
+<div id="galleria">
+            <img src="inf_img/1.jpg">
+            <img src="inf_img/2.jpg">
+            <img src="inf_img/3.jpg">
+            <img src="inf_img/4.jpg">
+            <img src="inf_img/5.jpg">
+            <img src="inf_img/6.jpg">
+            
+</div>
+</div>
+<div class="HotelInfBlock">
+<h5 style="font-size:17px;">Этот 5-звездочный отель в стиле ар-деко, открытый в 1932 году, находится в центре Праги, всего в 100 метрах от Вацлавской площади. Во всех номерах установлена кофемашина Nespresso. В числе удобств бесплатный Wi-Fi и каналы с разовой платой за просмотр. Осуществляется круглосуточная доставка еды и напитков в номер. В отеле не разрешается курить.<br>
+Все номера отеля Radisson Blu Alcron оборудованы телевизором с большим плоским экраном. Гостям предоставляется зонтик. В ванной комнате подогревается пол.<br>
+Гости могут бесплатно посещать хорошо оборудованный фитнес-центр с сауной. По запросу гостям делают массаж.<br>
+В отеле Radisson Blu Alcron работают 2 высококлассных ресторана. В ресторане Alcron, которому в 2012, 2013, 2014, 2015 и 2016 годах присваивалась престижная звезда Мишлен, подаются блюда по дегустационному меню. Ресторан специализируется на блюдах из рыбы и морепродуктов.<br>
+В превосходном ресторане La Rotonde готовят изысканные блюда чешской и интернациональной кухни, в том числе традиционную говяжью вырезку в соусе и шницели. Меню составляются под руководством шеф-повара Романа Паулюса.<br>
+В лобби-баре BeBop, красиво оформленном в стиле ар-деко, предлагаются уникальные фирменные коктейли и представлен широкий ассортимент ликеров, пива и вина. Для гостей каждый день разрабатывается интересное меню со специальными предложениями. Летом столики накрываются на открытой террасе. Завтрак за дополнительную плату можно заказать в баре.<br>
+Прогулка до Староместской площади занимает 10 минут, а до Карлова моста — всего 15 минут.<br>
+По итогам опроса читателей журнала для путешественников Condé Nast Traveler отель Radisson Blu Alcron был назван одним из лучших отелей Центральной Европы в 2015 году.<br>
+Это любимая часть города Прага среди наших гостей согласно независимым отзывам.<br>
+Мы говорим на вашем языке!<br>
+Radisson Blu Alcron Hotel — принимает гостей с 4 июня 2007<br>
+Номеров в отеле: 204, Сеть отелей: Radisson Blu</h5>
+</div>
+<script>
+
+    Galleria.loadTheme('../../gall_app/galleria.classic.min.js');
+    $('#galleria').galleria();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hotel</title>
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="../../gall_app/galleria-1.2.2.min.js"></script>
+<script>
+var x = false;
+function MenuSlide() {
+	if (x == false) {
+		x=true;
+		$('#leftslidemenu').animate({marginLeft:152},800).animate({opacity:0.95},500);
+	}
+	else {
+		x=false;
+		$('#leftslidemenu').animate({opacity:0.75},500).animate({marginLeft:-1},400);
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="leftslidemenu">
+        <a href="../../EUhotels.html"><h2>К отелям</h2></a>
+        <a href="../../index.html"><h2>На главную</h2></a>
+      <div id="butt" onClick="MenuSlide()"><img src="../../index_img/ham.png" width="70px" height="70px"></div>            
+</div>
+<div class="HotelInfBlock">
+<h3 class="hotelname">Sofitel Paris Arc De Triomphe</h3>
+</div>
+<div class="content1">	
+<div id="galleria">
+            <!--<a href="http://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Locomotives-Roundhouse2.jpg/1000px-Locomotives-Roundhouse2.jpg">
+            	<img title="Locomotives Roundhouse"
+            	     alt="Steam locomotives of the Chicago &amp; North Western Railway." 
+            	     src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Locomotives-Roundhouse2.jpg/100px-Locomotives-Roundhouse2.jpg">
+        	</a>           
+            -->
+            <img src="inf_img/1.jpg">
+            <img src="inf_img/2.jpg">
+            <img src="inf_img/3.jpg">
+            <img src="inf_img/4.jpg">
+            <img src="inf_img/5.jpg">
+            <img src="inf_img/6.jpg">
+            
+</div>
+</div>
+<div class="HotelInfBlock">
+<h5 style="font-size:17px;">Париж — остановитесь в самом центре – Посмотреть карту
+
+Один из лучших вариантов, выбранных нами в городе Париж. Отель Sofitel Paris Arc De Triomphe расположен в элегантном здании эпохи барона Османа, всего в 450 метрах от Триумфальной арки и роскошных бутиков на Елисейских полях. Дизайн этого бутик-отеля был полностью разработан в бюро Studio Putman.<br>
+В номерах установлены кровати с ортопедическими матрасами, чтобы сделать отдых гостей еще приятнее. К услугам гостей номера с декоративной подсветкой, док-станцией Bose для iPod, кофемашиной Nespresso и приветственным набором чая от Betjeman & Barton.<br>
+Люксы оборудованы звуковой системой Nightcove и телевизором со светодиодной подсветкой, а просторная ванная комната отделана мозаичной плиткой Putman. Кроме того, в люксах установлена отдельная ванна и большой душ. Для комфорта гостей в них предоставляются туалетно-косметические принадлежности от Hermes.<br>
+Над открытием ресторана Les Cocottes трудился шеф-повар Кристиан Констант. В этом ресторане с концепцией шик-бистро предлагают меню блюд из сезонных продуктов. В современном баре гости до полуночи могут заказать коктейли.<br>
+Во всех зонах отеля работает бесплатный Wi-Fi. На территории обустроена частная парковка. Станции метро Charles de Gaulle-Etoile и Georges V находятся в 5 минутах ходьбы от отеля. <br>
+Это любимая часть города Париж среди наших гостей согласно независимым отзывам. Этот район также отлично подходит для шопинга, поблизости есть магазины популярных брендов: Cartier, H&M, Chanel, Burberry, Louis Vuitton.<br>
+Sofitel Paris Arc De Triomphe — принимает гостей с 14 марта 2007<br>
+
+Номеров в отеле: 124<br>
+
+</h5>
+</div>
+<script>
+
+    Galleria.loadTheme('../../gall_app/galleria.classic.min.js');
+    $('#galleria').galleria();
+
+</script>
+</body>
+</html>
+<!--http://www.booking.com/hotel/fr/sofitel-arc-de-triomphe.ru.html?aid=801834;label=affnetcityads-index-1_pub-4wPX_clkid-3OmZ1IKsqLZe70y;sid=f7aa28b696b050f30e3613c025791b24;dcid=12;checkin=2016-05-27;checkout=2016-05-28;dest_id=-1456928;dest_type=city;dist=0;group_adults=1;group_children=0;highlighted_blocks=5401521_87377627_0_2;hpos=6;nflt=pri%3D5%3Bclass%3D5;no_rooms=1;room1=A;sb_price_type=total;srfid=59d1a51628f06648727c8fb958071c351e4dd2f3X6;type=total;ucfs=1&-->

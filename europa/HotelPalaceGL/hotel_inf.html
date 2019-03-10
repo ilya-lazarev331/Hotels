@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hotel</title>
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="../../gall_app/galleria-1.2.2.min.js"></script>
+<script>
+var x = false;
+function MenuSlide() {
+	if (x == false) {
+		x=true;
+		$('#leftslidemenu').animate({marginLeft:152},800).animate({opacity:0.95},500);
+	}
+	else {
+		x=false;
+		$('#leftslidemenu').animate({opacity:0.75},500).animate({marginLeft:-1},400);
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="leftslidemenu">
+        <a href="../../EUhotels.html"><h2>К отелям</h2></a>
+        <a href="../../index.html"><h2>На главную</h2></a>
+      <div id="butt" onClick="MenuSlide()"><img src="../../index_img/ham.png" width="70px" height="70px"></div>            
+</div>
+<div class="HotelInfBlock">
+<h3 class="hotelname">Hotel Palace GL</h3>
+</div>
+<div class="content1">	
+<div id="galleria">
+            <!--<a href="http://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Locomotives-Roundhouse2.jpg/1000px-Locomotives-Roundhouse2.jpg">
+            	<img title="Locomotives Roundhouse"
+            	     alt="Steam locomotives of the Chicago &amp; North Western Railway." 
+            	     src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Locomotives-Roundhouse2.jpg/100px-Locomotives-Roundhouse2.jpg">
+        	</a>           
+            -->
+            <img src="inf_img/1.jpg">
+            <img src="inf_img/2.jpg">
+            <img src="inf_img/3.jpg">
+            <img src="inf_img/4.jpg">
+            <img src="inf_img/5.jpg">
+            <img src="inf_img/6.jpg">
+            
+</div>
+</div>
+<div class="HotelInfBlock">
+<h5 style="font-size:17px;">Отель Palace GL находится в районе Эшампле, неподалеку от улицы Рамбла, главного торгового района и главных туристических достопримечательностей Барселоны. При отеле работает ресторан, отмеченный звездой Мишлен, и роскошный спа-салон Mayan.<br>
+
+Этот отель с фасадом в неоклассическом стиле был открыт в 1919 году. В числе удобств стильных номеров с классическим декором кондиционер, спутниковое телевидение, письменный стол, мини-бар и собственная ванная комната с феном, халатом и тапочками.<br>
+
+Ресторан Caelis отмечен 1 звездой Мишлен, а в в холле работает ресторан 19/Nineteen. В коктейль-баре Bluesman гостям подаются коктейли.<br>
+
+Кроме этого, в распоряжении гостей спа-салон в стиле майя с сауной темаскаль, фитнес и бизнес-центр, а также открытый бассейн.<br>
+
+Сотрудники отеля Palace GL всегда готовы предоставить информацию о регионе. Прогулка до станции метро Passeig de Gràcia, железнодорожного вокзала Пассеч-де-Грасиа и станции метро Urquinaona занимает менее 5 минут.<br>
+
+Эшампле — отличный выбор, если вам интересны архитектура, искусство и еда.<br>
+
+Это любимая часть города Барселона среди наших гостей согласно независимым отзывам.<br>
+Hotel Palace GL — принимает гостей с 1 июля 2009<br>
+Номеров в отеле: 125<br>
+</h5>
+</div>
+<script>
+
+    Galleria.loadTheme('../../gall_app/galleria.classic.min.js');
+    $('#galleria').galleria();
+
+</script>
+</body>
+</html>

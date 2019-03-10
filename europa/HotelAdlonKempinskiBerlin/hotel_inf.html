@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hotel</title>
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="../../gall_app/galleria-1.2.2.min.js"></script>
+<script>
+var x = false;
+function MenuSlide() {
+	if (x == false) {
+		x=true;
+		$('#leftslidemenu').animate({marginLeft:152},800).animate({opacity:0.95},500);
+	}
+	else {
+		x=false;
+		$('#leftslidemenu').animate({opacity:0.75},500).animate({marginLeft:-1},400);
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="leftslidemenu">
+        <a href="../../EUhotels.html"><h2>К отелям</h2></a>
+        <a href="../../index.html"><h2>На главную</h2></a>
+      <div id="butt" onClick="MenuSlide()"><img src="../../index_img/ham.png" width="70px" height="70px"></div>            
+</div>
+<div class="HotelInfBlock">
+<h3 class="hotelname">Hotel Adlon Kempinski Berlin</h3>
+</div>
+<div class="content1">	
+<div id="galleria">
+            <img src="inf_img/1.jpg">
+            <img src="inf_img/2.jpg">
+            <img src="inf_img/3.jpg">
+            <img src="inf_img/4.jpg">
+            <img src="inf_img/5.jpg">
+            <img src="inf_img/6.jpg">
+            
+</div>
+</div>
+<div class="HotelInfBlock">
+<h5 style="font-size:17px;">Легендарный 5-звездочный отель Adlon является воплощением роскоши и комфорта гостиничного обслуживания. Отель расположен в берлинском районе Митте, рядом с Бранденбургскими воротами. К услугам гостей такие ультрасовременные удобства, как ресторан, удостоенный 2 звезд Мишлен, и торговая галерея.<br>
+Великолепное центральное расположение отеля Adlon Kempinski позволит гостям без труда посетить некоторые из главных достопримечательностей Берлина. До Мемориала жертвам Холокоста, знаменитого КПП Чарли и Парижской площади можно дойти пешком всего за 10 минут.<br>
+Номера отеля очаруют гостей своей утонченной атмосферой, созданной благодаря старинной мебели, оригинальным элементам декора и мраморным ванным комнатам. В числе удобств Wi-Fi и современная мультимедийная система. Из окон некоторых номеров открывается вид на Бранденбургские ворота.<br>
+В распоряжении гостей отеля превосходные удобства для отдыха и занятий спортом, в том числе крытый бассейн в стиле неоклассицизма, тренажерный зал площадью 800 кв. м и спа-салон, где можно пройти аюрведические процедуры. В ресторанах отеля гости могут посетить поздние завтраки по воскресеньям, попробовать фирменные блюда из мяса диких животных или заказать приватный ужин.<br>
+Обратите внимание, что в связи с подготовкой к 20-летнему юбилею в отеле Adlon Kempinski Berlin проводятся строительные работы (см. ниже). При этом гостям гарантируют высочайший уровень сервиса в любое время.<br>
+Это любимая часть города Берлин среди наших гостей согласно независимым отзывам.<br>
+Hotel Adlon Kempinski Berlin — принимает гостей с 4 нояб. 2005<br>
+Номеров в отеле: 385, Сеть отелей: Kempinski</h5>
+</div>
+<script>
+
+    Galleria.loadTheme('../../gall_app/galleria.classic.min.js');
+    $('#galleria').galleria();
+
+</script>
+</body>
+</html>

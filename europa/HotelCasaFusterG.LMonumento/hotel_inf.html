@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hotel</title>
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="../../gall_app/galleria-1.2.2.min.js"></script>
+<script>
+var x = false;
+function MenuSlide() {
+	if (x == false) {
+		x=true;
+		$('#leftslidemenu').animate({marginLeft:152},800).animate({opacity:0.95},500);
+	}
+	else {
+		x=false;
+		$('#leftslidemenu').animate({opacity:0.75},500).animate({marginLeft:-1},400);
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="leftslidemenu">
+        <a href="../../EUhotels.html"><h2>К отелям</h2></a>
+        <a href="../../index.html"><h2>На главную</h2></a>
+      <div id="butt" onClick="MenuSlide()"><img src="../../index_img/ham.png" width="70px" height="70px"></div>            
+</div>
+<div class="HotelInfBlock">
+<h3 class="hotelname">Hotel Casa Fuster G.L Monumento</h3>
+</div>
+<div class="content1">	
+<div id="galleria">
+            <img src="inf_img/1.jpg">
+            <img src="inf_img/2.jpg">
+            <img src="inf_img/3.jpg">
+            <img src="inf_img/4.jpg">
+            <img src="inf_img/5.jpg">
+            <img src="inf_img/6.jpg">
+            
+</div>
+</div>
+<div class="HotelInfBlock">
+<h5 style="font-size:17px;">Это уникальное здание в стиле модерн находится в начале фешенебельного проспекта Пасео де Грасиа в Барселоне. К услугам гостей сауна, тренажерный зал и терраса на крыше с бассейном и видом на город.<br>
+Роскошный отель Casa Fuster является памятником сам по себе. Он был построен в 1908 году по проекту модернистского архитектора Луиса Доменека и Монтанера. Его работы, включая проект отеля, являются объектами Всемирного наследия ЮНЕСКО.<br>
+Гостям отеля Casa Fuster G.L Monumento предлагается размещение в элегантных номерах с кондиционерами, спутниковым телевидением и мини-баром. В ванной комнате вас ждет фен, халат и тапочки. В некоторых номерах есть гидромассажная ванна.<br>
+В отеле Casa Fuster работает стильный ресторан, где подают блюда средиземноморской кухни. Также гостей ждет обслуживание номеров, джаз-бар и чилл-аут бар на крыше.<br>
+Гостям предлагаются услуги консьержа и круглосуточной стойки регистрации. В экскурсионном бюро можно взять напрокат автомобиль. За дополнительную плату предоставляется парковка. <br>
+Это любимая часть города Барселона среди наших гостей согласно независимым отзывам.<br>
+Hotel Casa Fuster G.L Monumento — принимает гостей с 12 марта 2005<br>
+Номеров в отеле: 105, Сеть отелей: Hoteles Center</h5>
+</div>
+<script>
+
+    Galleria.loadTheme('../../gall_app/galleria.classic.min.js');
+    $('#galleria').galleria();
+
+</script>
+</body>
+</html>

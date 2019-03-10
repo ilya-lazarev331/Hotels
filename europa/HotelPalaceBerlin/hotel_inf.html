@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hotel</title>
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="../../gall_app/galleria-1.2.2.min.js"></script>
+<script>
+var x = false;
+function MenuSlide() {
+	if (x == false) {
+		x=true;
+		$('#leftslidemenu').animate({marginLeft:152},800).animate({opacity:0.95},500);
+	}
+	else {
+		x=false;
+		$('#leftslidemenu').animate({opacity:0.75},500).animate({marginLeft:-1},400);
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="leftslidemenu">
+        <a href="../../EUhotels.html"><h2>К отелям</h2></a>
+        <a href="../../index.html"><h2>На главную</h2></a>
+      <div id="butt" onClick="MenuSlide()"><img src="../../index_img/ham.png" width="70px" height="70px"></div>            
+</div>
+<div class="HotelInfBlock">
+<h3 class="hotelname">Hotel Palace Berlin</h3>
+</div>
+<div class="content1">	
+<div id="galleria">
+            <img src="inf_img/1.jpg">
+            <img src="inf_img/2.jpg">
+            <img src="inf_img/3.jpg">
+            <img src="inf_img/4.jpg">
+            <img src="inf_img/5.jpg">
+            <img src="inf_img/6.jpg">
+            
+</div>
+</div>
+<div class="HotelInfBlock">
+<h5 style="font-size:17px;">Этот отель располагается напротив Берлинского зоопарка, в 4 минутах ходьбы от Мемориальной церкви и торговой улицы Курфюрстендамм и в 700 метрах от знаменитого универмага KaDeWe. К услугам гостей бесплатный бассейн с гидромассажной ванной, современный фитнес-центр и спа-салон.<br>
+В числе удобств всех звукоизолированных номеров отеля Palace Berlin с классическим интерьером в стиле модерн, бесплатный Wi-Fi. Гости могут пользоваться компьютером с бесплатным доступом в Интернет в лобби отеля. Большая часть отеля была отремонтирована в 2013 году.<br>
+Каждый день в ресторане Bon Dia подают завтрак, включающий блюда местной и интернациональной кухни. В лобби отеля Palace работает лаундж-бар, а на территории отеля открыт бар House of Gin, в меню которого более 150 сортов джина и коктейлей.<br>
+Гостям отеля Palace Berlin предоставляются услуги массажиста и личного тренера. В 2013 году в тренажерном зале и массажном кабинете был проведен ремонт и установлено новое оборудование. В отеле также работает прокат велосипедов.<br>
+За 5 минут от отеля Palace Berlin можно дойти до железнодорожного вокзала «Зоологический сад», откуда можно без пересадок доехать до аэропортов Шенефельд и Тегель. <br>
+Мы говорим на вашем языке!<br>
+Hotel Palace Berlin — принимает гостей с 28 мая 2002
+Номеров в отеле: 278</h5>
+</div>
+<script>
+
+    Galleria.loadTheme('../../gall_app/galleria.classic.min.js');
+    $('#galleria').galleria();
+
+</script>
+</body>
+</html>
