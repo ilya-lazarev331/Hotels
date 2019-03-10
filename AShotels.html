@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ASIAN HOTELS</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="js/masonry.pkgd.min.js" defer async></script>
+<script src="js/masonry.pkgd.min.settings.js" defer async></script>
+<script>
+var x = false;
+function MenuSlide() {
+	if (x == false) {
+		x=true;
+		$('#leftslidemenu').animate({marginLeft:152},800).animate({opacity:0.95},500);
+	}
+	else {
+		x=false;
+		$('#leftslidemenu').animate({opacity:0.75},500).animate({marginLeft:-1},400);
+	}
+}
+function FilterBeijing() {
+	$('a.beijing').animate({opacity:1},500);
+	$('a.bangkok').animate({opacity:0.30},500);
+	$('a.newdelhi').animate({opacity:0.30},500);
+	$('a.tokyo').animate({opacity:0.30},500);
+	$('a.dubai').animate({opacity:0.30},500);
+}
+function FilterBangkok() {
+	$('a.beijing').animate({opacity:0.30},500);
+	$('a.bangkok').animate({opacity:1},500);
+	$('a.newdelhi').animate({opacity:0.30},500);
+	$('a.tokyo').animate({opacity:0.30},500);
+	$('a.dubai').animate({opacity:0.30},500);
+}
+function FilterNewDelhi() {
+	$('a.beijing').animate({opacity:0.30},500);
+	$('a.bangkok').animate({opacity:0.30},500);
+	$('a.newdelhi').animate({opacity:1},500);
+	$('a.tokyo').animate({opacity:0.30},500);
+	$('a.dubai').animate({opacity:0.30},500);
+}
+function FilterTokyo() {
+	$('a.beijing').animate({opacity:0.30},500);
+	$('a.bangkok').animate({opacity:0.30},500);
+	$('a.newdelhi').animate({opacity:0.30},500);
+	$('a.tokyo').animate({opacity:1},500);
+	$('a.dubai').animate({opacity:0.30},500);
+}
+function FilterDubai() {
+	$('a.beijing').animate({opacity:0.30},500);
+	$('a.bangkok').animate({opacity:0.30},500);
+	$('a.newdelhi').animate({opacity:0.30},500);
+	$('a.tokyo').animate({opacity:0.30},500);
+	$('a.dubai').animate({opacity:1},500);
+}
+function ViewAll() {
+	$('a.beijing').animate({opacity:1},500);
+	$('a.bangkok').animate({opacity:1},500);
+	$('a.newdelhi').animate({opacity:1},500);
+	$('a.tokyo').animate({opacity:1},500);
+	$('a.dubai').animate({opacity:1},500);
+}
+</script>
+
+<link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Knewave' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+<div id="header_hotels">
+	<div id="line1"></div>
+	<div id="line2"></div>
+	<div id="logo_hotels">
+    <a href="index.html">
+		<h1 id="logo_1_hotels">HOTEL</h1>
+		<h1 id="logo_2_hotels">GUIDE</h1>
+        <h1 id="logo_2_hotels" style="font-size:25px; margin:-20px 0px 0px 100px; color:darkslateblue;">AS</h1>
+    </a>
+	</div>    
+</div>
+<div id="leftslidemenu">
+        <h2 onClick="FilterBeijing()">Пекин</h2>
+        <h2 onClick="FilterBangkok()">Бангкок</h2>
+        <h2 onClick="FilterNewDelhi()">Нью-Дели</h2>
+        <h2 onClick="FilterTokyo()">Токио</h2>
+        <h2 onClick="FilterDubai()">Дубай</h2>
+        <h2 onClick="ViewAll()">Показать всё</h2>
+        <a href="index.html"><h2>На главную</h2></a>
+      <div id="butt" onClick="MenuSlide()"><img src="index_img/ham.png" width="70px" height="70px"></div>            
+</div>
+<div id="container">
+    <a href="asia/BurjAlArab/hotel_inf.html" class="dubai"><div class="item"><img src="asia/BurjAlArab/inf_img/1.jpg"><span>Burj Al Arab, Dubai</span></div></a>
+    <a href="asia/BeijingRedWallGardenHotelWangfujing/hotel_inf.html" class="beijing"><div class="item"><img src="asia/BeijingRedWallGardenHotelWangfujing/inf_img/1.jpg"><span>Beijing Red Wall Garden Hotel Wangfujing, Beijing</span></div></a> 
+    <a href="asia/FourSeasonsHotelTokyoatMarunouchi/hotel_inf.html" class="tokyo"><div class="item"><img src="asia/FourSeasonsHotelTokyoatMarunouchi/inf_img/1.jpg"><span>Four Seasons Hotel Tokyo at Marunouchi, Tokyo</span></div></a>
+    <a href="asia/lebuaatStateTower/hotel_inf.html" class="bangkok"><div class="item"><img src="asia/lebuaatStateTower/inf_img/1.jpg"><span>lebua at State Tower, Bangkok</span></div></a>
+    <a href="asia/ThePeninsulaBangkok/hotel_inf.html" class="bangkok"><div class="item"><img src="asia/ThePeninsulaBangkok/inf_img/1.jpg"><span>The Peninsula Bangkok, Bangkok</span></div></a>
+     <a href="asia/TheLeelaPalaceNewDelhi/hotel_inf.html" class="newdelhi"><div class="item"><img src="asia/TheLeelaPalaceNewDelhi/inf_img/1.jpg"><span>The Leela Palace New Delhi, New Delhi</span></div></a>
+     <a href="asia/TheAshok/hotel_inf.html" class="newdelhi"><div class="item"><img src="asia/TheAshok/inf_img/1.jpg"><span>The Ashok, New Delhi</span></div></a>
+     <a href="asia/ParkHyattTokyo/hotel_inf.html" class="tokyo"><div class="item"><img src="asia/ParkHyattTokyo/inf_img/1.jpg"><span>Park Hyatt Tokyo, Tokyo</span></div></a>
+         
+     <a href="asia/JumeirahDarAlMasyaf-MadinatJumeirah/hotel_inf.html" class="dubai"><div class="item"><img src="asia/JumeirahDarAlMasyaf-MadinatJumeirah/inf_img/1.jpg"><span>Jumeirah Dar Al Masyaf - Madinat Jumeirah, Dubai</span></div></a>
+     <a href="asia/GrandHotelBeijing/hotel_inf.html" class="beijing"><div class="item"><img src="asia/GrandHotelBeijing/inf_img/1.jpg"><span>Grand Hotel Beijing, Beijing</span></div></a>
+     
+</div>
+</body>
+</html>

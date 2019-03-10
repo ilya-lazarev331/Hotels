@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hotel</title>
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="../../gall_app/galleria-1.2.2.min.js"></script>
+<script>
+var x = false;
+function MenuSlide() {
+	if (x == false) {
+		x=true;
+		$('#leftslidemenu').animate({marginLeft:152},800).animate({opacity:0.95},500);
+	}
+	else {
+		x=false;
+		$('#leftslidemenu').animate({opacity:0.75},500).animate({marginLeft:-1},400);
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="leftslidemenu">
+        <a href="../../RUhotels.html"><h2>К отелям</h2></a>
+        <a href="../../index.html"><h2>На главную</h2></a>
+      <div id="butt" onClick="MenuSlide()"><img src="../../index_img/ham.png" width="70px" height="70px"></div>            
+</div>
+<div class="HotelInfBlock">
+<h3 class="hotelname">Родина Гранд Отель и Спа</h3>
+</div>
+<div class="content1">	
+<div id="galleria">
+            <img src="inf_img/1.jpg">
+            <img src="inf_img/2.jpg">
+            <img src="inf_img/3.jpg">
+            <img src="inf_img/4.jpg">
+            <img src="inf_img/5.jpg">
+            <img src="inf_img/6.jpg">
+            
+</div>
+</div>
+<div class="HotelInfBlock">
+<h5 style="font-size:17px;">Роскошный 5-звездочный отель «Гранд-отель и СПА Родина» расположен на берегу Чёрного моря в Сочи. К услугам гостей собственный пляж, несколько ресторанов изысканной кухни, оздоровительный и спа-центр «Родина» с крытым и открытым бассейнами, а также детский клуб.<br>
+Отель «Гранд-отель и СПА Родина» находится в окружении субтропических садов площадью 15 га. Стильные номера и люксы оснащены телевизором с плоским экраном и обставлены дизайнерской мебелью.<br>
+Завтрак «шведский стол» накрывается в главном ресторане «Москва». В пляжном ресторане BSBC предлагаются напитки и закуски. Кроме того, гости могут заказать коктейли в одном из стильных баров отеля. На крыше находится терраса «Небеса».<br>
+Отель «Гранд-отель и СПА Родина» является единственным 5-звездочным бутик-отелем в Сочи. Среди прочих эксклюзивных удобств — собственный кинотеатр, бильярдный зал, теннисные корты, а также площадки для игры в волейбол и баскетбол. Гостям отеля «Родина» предоставляются гольф-карты для перемещения по территории. <br>
+Мы говорим на вашем языке!<br>
+Родина Гранд Отель и Спа — принимает гостей с 2 февр. 2010<br>
+Номеров в отеле: 60</h5>
+</div>
+<script>
+
+    Galleria.loadTheme('../../gall_app/galleria.classic.min.js');
+    $('#galleria').galleria();
+
+</script>
+</body>
+</html>

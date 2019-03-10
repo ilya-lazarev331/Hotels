@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hotel</title>
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="../../gall_app/galleria-1.2.2.min.js"></script>
+<script>
+var x = false;
+function MenuSlide() {
+	if (x == false) {
+		x=true;
+		$('#leftslidemenu').animate({marginLeft:152},800).animate({opacity:0.95},500);
+	}
+	else {
+		x=false;
+		$('#leftslidemenu').animate({opacity:0.75},500).animate({marginLeft:-1},400);
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="leftslidemenu">
+        <a href="../../RUhotels.html"><h2>К отелям</h2></a>
+        <a href="../../index.html"><h2>На главную</h2></a>
+      <div id="butt" onClick="MenuSlide()"><img src="../../index_img/ham.png" width="70px" height="70px"></div>            
+</div>
+<div class="HotelInfBlock">
+<h3 class="hotelname">Эрмитаж - официальная гостиница государственного музея</h3>
+</div>
+<div class="content1">	
+<div id="galleria">
+            <img src="inf_img/1.jpg" alt="Императорский люкс">
+            <img src="inf_img/2.jpg" alt="Президентский люкс">
+            <img src="inf_img/3.jpg">
+            <img src="inf_img/4.jpg">
+            <img src="inf_img/5.jpg">
+            <img src="inf_img/6.jpg">
+            
+</div>
+</div>
+<div class="HotelInfBlock">
+<h5 style="font-size:17px;">Этот эксклюзивный 5-звездочный отель находится в центре Санкт-Петербурга, в здании особняка, построенного в 30-х годах 19 века. В помещениях отеля царит подлинная атмосфера музея Эрмитаж. К услугам гостей спа- и велнес-центр, а также бесплатный WiFi.<br>
+Роскошные номера и люксы официального отеля при музее Эрмитаж в Санкт-Петербурге обставлены элегантной мебелью, изготовленной по эскизам флорентийских мастеров по дереву. Во всех номерах есть телевизор с плоским экраном, мини-бар и собственная ванная комната, отделанная итальянским и греческим мрамором. Гостям предоставляются халаты.<br>
+В меню бутик-ресторана «Микеланджело» представлены традиционные блюда итальянской кухни и изысканные десерты. В тихом лобби-баре гости смогут познакомиться с традицией русского чаепития. В элегантном ресторане «Екатерина Великая» подают блюда русской кухни, приготовленные на основе рецептов из меню исторического Зимнего дворца.<br>
+Оживленный Невский проспект находится в 15 минутах ходьбы от отеля, а сам музей Эрмитаж — в 3 км.<br>
+Официальный отель музея Эрмитаж в Санкт-Петербурге расположен в 7 минутах ходьбы от станции метро «Владимирская». Расстояние до Московского железнодорожного вокзала составляет 1,8 км, а до международного аэропорта Пулково — 22 км. <br>
+Это любимая часть города Санкт-Петербург среди наших гостей согласно независимым отзывам.<br>
+Мы говорим на вашем языке!<br>
+Эрмитаж - официальная гостиница государственного музея — принимает гостей с 22 авг. 2013<br>
+Номеров в отеле: 126</h5>
+</div>
+<script>
+
+    Galleria.loadTheme('../../gall_app/galleria.classic.min.js');
+    $('#galleria').galleria();
+
+</script>
+</body>
+</html>

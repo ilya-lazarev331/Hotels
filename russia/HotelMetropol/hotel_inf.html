@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hotel</title>
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="../../gall_app/galleria-1.2.2.min.js"></script>
+<script>
+var x = false;
+function MenuSlide() {
+	if (x == false) {
+		x=true;
+		$('#leftslidemenu').animate({marginLeft:152},800).animate({opacity:0.95},500);
+	}
+	else {
+		x=false;
+		$('#leftslidemenu').animate({opacity:0.75},500).animate({marginLeft:-1},400);
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="leftslidemenu">
+        <a href="../../RUhotels.html"><h2>К отелям</h2></a>
+        <a href="../../index.html"><h2>На главную</h2></a>
+      <div id="butt" onClick="MenuSlide()"><img src="../../index_img/ham.png" width="70px" height="70px"></div>            
+</div>
+<div class="HotelInfBlock">
+<h3 class="hotelname">Гостиница Метрополь</h3>
+</div>
+<div class="content1">	
+<div id="galleria">
+            <img src="inf_img/1.jpg">
+            <img src="inf_img/2.jpg">
+            <img src="inf_img/3.jpg">
+            <img src="inf_img/4.jpg">
+            <img src="inf_img/5.jpg">
+            <img src="inf_img/6.jpg">
+            
+</div>
+</div>
+<div class="HotelInfBlock">
+<h5 style="font-size:17px;">Этот старинный отель с бассейном и тренажерным залом находится напротив Большого театра в центре Москвы. Прогулка до Кремля занимает 5 минут. Места на парковке предоставляются бесплатно.<br>
+Номера старинного отеля «Метрополь» с большими окнами, люстрами и старинными орнаментами оформлены в стиле ар-нуво. В числе удобств всех номеров и люксов кондиционер, телевизор с плоским экраном, халаты и тапочки.<br>
+В ресторане «Европейский» сервируется сытный завтрак «шведский стол» и подают блюда европейской кухни. Напитки и закуски можно заказать в стильном баре «Шаляпин».<br>
+Гости отеля «Метрополь» смогут расслабиться в сауне, массажном кабинете и салоне красоты.<br>
+Прогулка до Кремля, Красной площади и станции метро «Театральная» занимает менее 3 минут. <br>
+Это любимая часть города Москва среди наших гостей согласно независимым отзывам.<br>
+Мы говорим на вашем языке!<br>
+Гостиница Метрополь — принимает гостей с 5 марта 2009<br>
+Номеров в отеле: 388</h5>
+</div>
+<script>
+
+    Galleria.loadTheme('../../gall_app/galleria.classic.min.js');
+    $('#galleria').galleria();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hotel</title>
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="../../gall_app/galleria-1.2.2.min.js"></script>
+<script>
+var x = false;
+function MenuSlide() {
+	if (x == false) {
+		x=true;
+		$('#leftslidemenu').animate({marginLeft:152},800).animate({opacity:0.95},500);
+	}
+	else {
+		x=false;
+		$('#leftslidemenu').animate({opacity:0.75},500).animate({marginLeft:-1},400);
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="leftslidemenu">
+        <a href="../../RUhotels.html"><h2>К отелям</h2></a>
+        <a href="../../index.html"><h2>На главную</h2></a>
+      <div id="butt" onClick="MenuSlide()"><img src="../../index_img/ham.png" width="70px" height="70px"></div>            
+</div>
+<div class="HotelInfBlock">
+<h3 class="hotelname">Бельмонд Гранд Отель Европа</h3>
+</div>
+<div class="content1">	
+<div id="galleria">
+            <img src="inf_img/1.jpg">
+            <img src="inf_img/2.jpg">
+            <img src="inf_img/3.jpg">
+            <img src="inf_img/4.jpg">
+            <img src="inf_img/5.jpg">
+            <img src="inf_img/6.jpg">
+            
+</div>
+</div>
+<div class="HotelInfBlock">
+<h5 style="font-size:17px;">Этот 5-звездочный гранд-отель с элегантными номерами прекрасно расположен в центре Санкт-Петербурга.<br>
+Роскошные номера гранд-отеля «Бельмонд Европа» со вкусом оформлены и оснащены всеми современными удобствами.<br>
+Также в распоряжении гостей гранд-отеля «Бельмонд Европа» фитнес-центр, солярий, сауна, массажный кабинет и другие превосходные удобства. Кроме того, для спокойного отдыха в отеле можно воспользоваться услугами няни, глажки и чистки обуви.<br>
+Недалеко от отеля расположены многочисленные театры, музеи и достопримечательности, включая площадь Искусств, Адмиралтейство и бывшую царскую резиденцию Зимний дворец. На хорошо известном Невском проспекте находятся разнообразные магазины, бары и кафе.<br>
+В гранд-отеле «Бельмонд Европа» можно посетить 6 ресторанов и кафе, где подают вкусные блюда и прохладительные напитки. Внимательные и профессиональные сотрудники в любое время суток готовы оказать гостям помощь.<br>
+Для деловых путешественников в гранд-отеле «Бельмонд Европа» оборудованы конференц-залы с новейшими аудио- и видеотехнологиями, а также 5-звездочными бизнес-услугами. <br>
+Это любимая часть города Санкт-Петербург среди наших гостей согласно независимым отзывам.<br>
+Мы говорим на вашем языке!<br>
+Бельмонд Гранд Отель Европа — принимает гостей с 23 июля 2009<br>
+Номеров в отеле: 266, Сеть отелей: Belmond Hotels</h5>
+</div>
+<script>
+
+    Galleria.loadTheme('../../gall_app/galleria.classic.min.js');
+    $('#galleria').galleria();
+
+</script>
+</body>
+</html>

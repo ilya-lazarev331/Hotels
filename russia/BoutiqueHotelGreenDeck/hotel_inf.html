@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hotel</title>
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="../../gall_app/galleria-1.2.2.min.js"></script>
+<script>
+var x = false;
+function MenuSlide() {
+	if (x == false) {
+		x=true;
+		$('#leftslidemenu').animate({marginLeft:152},800).animate({opacity:0.95},500);
+	}
+	else {
+		x=false;
+		$('#leftslidemenu').animate({opacity:0.75},500).animate({marginLeft:-1},400);
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="leftslidemenu">
+        <a href="../../RUhotels.html"><h2>К отелям</h2></a>
+        <a href="../../index.html"><h2>На главную</h2></a>
+      <div id="butt" onClick="MenuSlide()"><img src="../../index_img/ham.png" width="70px" height="70px"></div>            
+</div>
+<div class="HotelInfBlock">
+<h3 class="hotelname">Бутик-отель Green Deck</h3>
+</div>
+<div class="content1">	
+<div id="galleria">
+            <img src="inf_img/1.jpg">
+            <img src="inf_img/2.jpg">
+            <img src="inf_img/3.jpg">
+            <img src="inf_img/4.jpg">
+            <img src="inf_img/5.jpg">
+            <img src="inf_img/6.jpg">
+            
+</div>
+</div>
+<div class="HotelInfBlock">
+<h5 style="font-size:17px;">Бутик-отель Green Deck расположен в городе Сочи, в 5 минутах езды от пляжа Черного моря. К услугам гостей бесплатный Wi-Fi, бесплатная парковка, открытый бассейн и турецкая паровая баня.<br>
+Светлые номера с кондиционером оформлены в современном стиле и теплых тонах. В каждом номере имеется телевизор с плоским экраном, мини-бар, балкон и собственная ванная комната с халатами.<br>
+В отеле работает ресторан, где подают блюда европейской кухни, и бар, где можно заказывать разнообразные напитки.<br>
+Парк развлечений «Ривьера» находится в 2,5 км от отеля, а центральный Курортный проспект — в 3,5 км.<br>
+Расстояние от бутик-отеля Green Deck до центрального железнодорожного вокзала Сочи составляет 3,5 км, а до международного аэропорта Сочи — 31 км. <br>
+Мы говорим на вашем языке!<br>
+Бутик-отель Green Deck — принимает гостей с 30 мая 2013<br>
+Номеров в отеле: 19</h5>
+</div>
+<script>
+
+    Galleria.loadTheme('../../gall_app/galleria.classic.min.js');
+    $('#galleria').galleria();
+
+</script>
+</body>
+</html>

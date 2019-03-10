@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hotel</title>
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="../../gall_app/galleria-1.2.2.min.js"></script>
+<script>
+var x = false;
+function MenuSlide() {
+	if (x == false) {
+		x=true;
+		$('#leftslidemenu').animate({marginLeft:152},800).animate({opacity:0.95},500);
+	}
+	else {
+		x=false;
+		$('#leftslidemenu').animate({opacity:0.75},500).animate({marginLeft:-1},400);
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="leftslidemenu">
+        <a href="../../RUhotels.html"><h2>К отелям</h2></a>
+        <a href="../../index.html"><h2>На главную</h2></a>
+      <div id="butt" onClick="MenuSlide()"><img src="../../index_img/ham.png" width="70px" height="70px"></div>            
+</div>
+<div class="HotelInfBlock">
+<h3 class="hotelname">Отель Ривьера</h3>
+</div>
+<div class="content1">	
+<div id="galleria">
+            <img src="inf_img/1.jpg">
+            <img src="inf_img/2.jpg">
+            <img src="inf_img/3.jpg">
+            <img src="inf_img/4.jpg">
+            <img src="inf_img/5.jpg">
+            <img src="inf_img/6.jpg">
+            
+</div>
+</div>
+<div class="HotelInfBlock">
+<h5 style="font-size:17px;">Современный 4-звездочный отель «Ривьера» находится в Казани, на берегу реки Казанки. К услугам гостей аквапарк, крытый и открытый бассейны, а также оздоровительный и спа-центр. Отель расположен в самом высоком здании в Казани, из которого открывается вид на реку и Казанский кремль.<br>
+Из большинства комфортабельных номеров этого 26-этажного отеля можно полюбоваться панорамным видом. Номера со вкусом оформлены и оснащены рабочим столом. Кроме того, в распоряжении гостей ванная комната в номере и бесплатный Wi-Fi.<br>
+Среди удобств отеля «Ривьера» — фитнес-центр премиум-класса, кинотеатр, ночной клуб и боулинг.<br>
+Каждое утро сервируется завтрак «шведский стол». В ресторане Amore, из которого открывается вид на Казанский Кремль, подают блюда национальной и европейской кухни.<br>
+За 5 минут можно дойти до многофункционального спортивно-концертного комплекса «Татнефть-Арена». До станции метро «Козья Слобода» — 2,7 км. Отель «Ривьера» находится в 6,5 км от железнодорожного вокзала Казани и в 29 км от международного аэропорта Казани. <br>
+Мы говорим на вашем языке!<br>
+Отель Ривьера — принимает гостей с 20 янв. 2010<br>
+Номеров в отеле: 210</h5>
+</div>
+<script>
+
+    Galleria.loadTheme('../../gall_app/galleria.classic.min.js');
+    $('#galleria').galleria();
+
+</script>
+</body>
+</html>

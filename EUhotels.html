@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>EUROPEAN HOTELS</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="js/masonry.pkgd.min.js" defer async></script>
+<script src="js/masonry.pkgd.min.settings.js" defer async></script>
+<script>
+var x = false;
+function MenuSlide() {
+	if (x == false) {
+		x=true;
+		$('#leftslidemenu').animate({marginLeft:152},800).animate({opacity:0.95},500);
+	}
+	else {
+		x=false;
+		$('#leftslidemenu').animate({opacity:0.75},500).animate({marginLeft:-1},400);
+	}
+}
+function FilterBarcelona() {
+	$('a.barcelona').animate({opacity:1},500);
+	$('a.paris').animate({opacity:0.30},500);
+	$('a.prague').animate({opacity:0.30},500);
+	$('a.rome').animate({opacity:0.30},500);
+	$('a.berlin').animate({opacity:0.30},500);
+}
+function FilterParis() {
+	$('a.barcelona').animate({opacity:0.30},500);
+	$('a.paris').animate({opacity:1},500);
+	$('a.prague').animate({opacity:0.30},500);
+	$('a.rome').animate({opacity:0.30},500);
+	$('a.berlin').animate({opacity:0.30},500);
+}
+function FilterPrague() {
+	$('a.barcelona').animate({opacity:0.30},500);
+	$('a.paris').animate({opacity:0.30},500);
+	$('a.prague').animate({opacity:1},500);
+	$('a.rome').animate({opacity:0.30},500);
+	$('a.berlin').animate({opacity:0.30},500);
+}
+function FilterPome() {
+	$('a.barcelona').animate({opacity:0.30},500);
+	$('a.paris').animate({opacity:0.30},500);
+	$('a.prague').animate({opacity:0.30},500);
+	$('a.rome').animate({opacity:1},500);
+	$('a.berlin').animate({opacity:0.30},500);
+}
+function FilterBerlin() {
+	$('a.barcelona').animate({opacity:0.30},500);
+	$('a.paris').animate({opacity:0.30},500);
+	$('a.prague').animate({opacity:0.30},500);
+	$('a.rome').animate({opacity:0.30},500);
+	$('a.berlin').animate({opacity:1},500);
+}
+function ViewAll() {
+	$('a.barcelona').animate({opacity:1},500);
+	$('a.paris').animate({opacity:1},500);
+	$('a.prague').animate({opacity:1},500);
+	$('a.rome').animate({opacity:1},500);
+	$('a.berlin').animate({opacity:1},500);
+}
+</script>
+
+<link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Knewave' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+<div id="header_hotels">
+	<div id="line1"></div>
+	<div id="line2"></div>
+	<div id="logo_hotels">
+    <a href="index.html">
+		<h1 id="logo_1_hotels">HOTEL</h1>
+		<h1 id="logo_2_hotels">GUIDE</h1>
+        <h1 id="logo_2_hotels" style="font-size:25px; margin:-20px 0px 0px 100px; color:darkslateblue;">EU</h1>
+    </a>
+	</div>    
+</div>
+<div id="leftslidemenu">
+        <h2 onClick="FilterBarcelona()">Барселона</h2>
+        <h2 onClick="FilterParis()">Париж</h2>
+        <h2 onClick="FilterPrague()">Прага</h2>
+        <h2 onClick="FilterPome()">Рим</h2>
+        <h2 onClick="FilterBerlin()">Берлин</h2>
+        <h2 onClick="ViewAll()">Показать всё</h2>
+        <a href="index.html"><h2>На главную</h2></a>
+      <div id="butt" onClick="MenuSlide()"><img src="index_img/ham.png" width="70px" height="70px"></div>            
+</div>
+<div id="container">
+    
+    
+    <a href="europa/SofitelParisArcDeTriomphe/hotel_inf.html" class="paris"><div class="item"><img src="europa/SofitelParisArcDeTriomphe/inf_img/1.jpg"><span>Sofitel Paris Arc De Triomphe, Paris</span></div></a> 
+    <a href="europa/RadissonBluAlcronHotel/hotel_inf.html" class="prague"><div class="item"><img src="europa/RadissonBluAlcronHotel/inf_img/1.jpg"><span>Radisson Blu Alcron Hotel, Prague</span></div></a>
+    <a href="europa/HotelCasaFusterG.LMonumento/hotel_inf.html" class="barcelona"><div class="item"><img src="europa/HotelCasaFusterG.LMonumento/inf_img/1.jpg"><span>Hotel Casa Fuster G.L Monumento, Barcelona</span></div></a>
+    <a href="europa/HotelPalaceGL/hotel_inf.html" class="barcelona"><div class="item"><img src="europa/HotelPalaceGL/inf_img/1.jpg"><span>Hotel Palace GL, Barcelona</span></div></a>
+    <a href="europa/PresidentHotel/hotel_inf.html" class="prague"><div class="item"><img src="europa/PresidentHotel/inf_img/1.jpg"><span>President Hotel, Prague</span></div></a>
+    <a href="europa/GrandHotelPlaza/hotel_inf.html" class="rome"><div class="item"><img src="europa/GrandHotelPlaza/inf_img/1.jpg"><span>Grand Hotel Plaza, Rome</span></div></a>
+    <a href="europa/LeCinqCodet/hotel_inf.html" class="paris"><div class="item"><img src="europa/LeCinqCodet/inf_img/1.jpg"><span>Le Cinq Codet, Paris</span></div></a>
+     <a href="europa/BoscoloExedraRoma,AutographCollection®,AMarriottLuxury&LifestyleHotel/hotel_inf.html" class="rome"><div class="item"><img src="europa/BoscoloExedraRoma,AutographCollection®,AMarriottLuxury&LifestyleHotel/inf_img/1.jpg"><span>Boscolo Exedra Roma, Autograph Collection®, A Marriott Luxury & Lifestyle Hotel, Rome</span></div></a>
+    <a href="europa/HotelPalaceBerlin/hotel_inf.html" class="berlin"><div class="item"><img src="europa/HotelPalaceBerlin/inf_img/1.jpg"><span>Hotel Palace Berlin, Berlin</span></div></a>
+    <a href="europa/HotelAdlonKempinskiBerlin/hotel_inf.html" class="berlin"><div class="item"><img src="europa/HotelAdlonKempinskiBerlin/inf_img/1.jpg"><span>Hotel Adlon Kempinski Berlin, Berlin</span></div></a>
+    
+     
+</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hotel</title>
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="../../gall_app/galleria-1.2.2.min.js"></script>
+<script>
+var x = false;
+function MenuSlide() {
+	if (x == false) {
+		x=true;
+		$('#leftslidemenu').animate({marginLeft:152},800).animate({opacity:0.95},500);
+	}
+	else {
+		x=false;
+		$('#leftslidemenu').animate({opacity:0.75},500).animate({marginLeft:-1},400);
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="leftslidemenu">
+        <a href="../../RUhotels.html"><h2>К отелям</h2></a>
+        <a href="../../index.html"><h2>На главную</h2></a>
+      <div id="butt" onClick="MenuSlide()"><img src="../../index_img/ham.png" width="70px" height="70px"></div>            
+</div>
+<div class="HotelInfBlock">
+<h3 class="hotelname">Отель Пионер Люкс</h3>
+</div>
+<div class="content1">	
+<div id="galleria">
+            <img src="inf_img/1.jpg">
+            <img src="inf_img/2.jpg">
+            <img src="inf_img/3.jpg">
+            <img src="inf_img/4.jpg">
+            <img src="inf_img/5.jpg">
+            <img src="inf_img/6.jpg">
+            
+</div>
+</div>
+<div class="HotelInfBlock">
+<h5 style="font-size:17px;">Этот отель класса люкс находится в центре Саратова. К услугам гостей номера с бесплатным Wi-Fi, бесплатным мини-баром и видом на проспект Кирова со множеством магазинов. Это первый отель Саратова, оснащенный лифтом с панорамным видом.<br>
+Отель "Пионер Люкс" расположен в многоэтажном здании со стеклянным фасадом. Каждое утро гостям подают завтрак "шведский стол". Вкусные блюда русской кухни сервируют в традиционном винном салоне, отделанном деревом, или в современном ресторане с телевизором с плоским экраном.<br>
+В индивидуально меблированных номерах отеля "Пионер Люкс" есть рабочий стол, мини-бар и телевизор с плоским экраном и DVD-плеером. В бесплатном мини-баре для гостей приготовлены алкогольные и безалкогольные напитки, а также закуски.<br>
+В баре представлен широкий выбор вин и других напитков на розлив. На круглосуточной стойке регистрации отеля "Пионер" есть сейф для хранения ценных вещей.<br>
+Отель "Пионер Люкс Саратов" имеет удобное месторасположение, ведь на проспекте Кирова к услугам гостей магазины, кинотеатры, рестораны и кафе. Саратовский центральный аэропорт также находится неподалеку.<br>
+Это любимая часть города Саратов среди наших гостей согласно независимым отзывам.<br>
+Мы говорим на вашем языке!<br>
+Отель Пионер Люкс — принимает гостей с 7 апр. 2011<br>
+Номеров в отеле: 30</h5>
+</div>
+<script>
+
+    Galleria.loadTheme('../../gall_app/galleria.classic.min.js');
+    $('#galleria').galleria();
+
+</script>
+</body>
+</html>

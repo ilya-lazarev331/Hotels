@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hotel</title>
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="../../gall_app/galleria-1.2.2.min.js"></script>
+<script>
+var x = false;
+function MenuSlide() {
+	if (x == false) {
+		x=true;
+		$('#leftslidemenu').animate({marginLeft:152},800).animate({opacity:0.95},500);
+	}
+	else {
+		x=false;
+		$('#leftslidemenu').animate({opacity:0.75},500).animate({marginLeft:-1},400);
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="leftslidemenu">
+        <a href="../../RUhotels.html"><h2>К отелям</h2></a>
+        <a href="../../index.html"><h2>На главную</h2></a>
+      <div id="butt" onClick="MenuSlide()"><img src="../../index_img/ham.png" width="70px" height="70px"></div>            
+</div>
+<div class="HotelInfBlock">
+<h3 class="hotelname">Гостиница Словакия</h3>
+</div>
+<div class="content1">	
+<div id="galleria">
+            <img src="inf_img/1.jpg">
+            <img src="inf_img/2.jpg">
+            <img src="inf_img/3.jpg">
+            <img src="inf_img/4.jpg">
+            <img src="inf_img/5.jpg">
+            <img src="inf_img/6.jpg">
+            
+</div>
+</div>
+<div class="HotelInfBlock">
+<h5 style="font-size:17px;">Эта трехзвездочная гостиница расположена в Саратове, на набережной Космонавтов на берегу реки Волги. В гостинице есть сауна с бассейном, 2 ресторана международной кухни, а также бесплатный Wi-Fi.<br>
+Гостиница "Словакия" предоставляет номера и люксы с кондиционером, телевизором и ванной комнатой с бесплатным халатом. Номера и люксы имеют декор в классическом стиле. Почти все номера имеют вид на реку Волга.<br>
+В гостинице "Словакия" также имеется парикмахерская и предлагается широкий спектр услуг по маникюру и педикюру.<br>
+Ресторана "Карамель" и "Словакия" в гостинице "Словакия" предлагают гостям блюда европейской и восточной кухни. Гости могут отведать сытный завтрак "шведский стол" и попробовать специальные диетические блюда.<br>
+Свято-Троицкий собор располагается в 5-ти минутах ходьбы от гостиницы "Словакия". Саратовский железнодорожный вокзал и аэропорт находятся в 7 км. Речной теплоход останавливается прямо напротив гостиницы. <br>
+Мы говорим на вашем языке!<br>
+Гостиница Словакия — принимает гостей с 11 апр. 2011<br>
+Номеров в отеле: 256</h5>
+</div>
+<script>
+
+    Galleria.loadTheme('../../gall_app/galleria.classic.min.js');
+    $('#galleria').galleria();
+
+</script>
+</body>
+</html>

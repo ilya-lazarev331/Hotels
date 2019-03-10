@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>RUSSIAN HOTELS</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="js/masonry.pkgd.min.js" defer async></script>
+<script src="js/masonry.pkgd.min.settings.js" defer async></script>
+<script>
+var x = false;
+function MenuSlide() {
+	if (x == false) {
+		x=true;
+		$('#leftslidemenu').animate({marginLeft:152},800).animate({opacity:0.95},500);
+	}
+	else {
+		x=false;
+		$('#leftslidemenu').animate({opacity:0.75},500).animate({marginLeft:-1},400);
+	}
+}
+function FilterSaintP() {
+	$('a.saintp').animate({opacity:1},500);
+	$('a.moscow').animate({opacity:0.30},500);
+	$('a.saratov').animate({opacity:0.30},500);
+	$('a.sochi').animate({opacity:0.30},500);
+	$('a.kazan').animate({opacity:0.30},500);
+}
+function FilterMoscow() {
+	$('a.saintp').animate({opacity:0.30},500);
+	$('a.moscow').animate({opacity:1},500);
+	$('a.saratov').animate({opacity:0.30},500);
+	$('a.sochi').animate({opacity:0.30},500);
+	$('a.kazan').animate({opacity:0.30},500);
+}
+function FilterSaratov() {
+	$('a.saintp').animate({opacity:0.30},500);
+	$('a.moscow').animate({opacity:0.30},500);
+	$('a.saratov').animate({opacity:1},500);
+	$('a.sochi').animate({opacity:0.30},500);
+	$('a.kazan').animate({opacity:0.30},500);
+}
+function FilterSochi() {
+	$('a.saintp').animate({opacity:0.30},500);
+	$('a.moscow').animate({opacity:0.30},500);
+	$('a.saratov').animate({opacity:0.30},500);
+	$('a.sochi').animate({opacity:1},500);
+	$('a.kazan').animate({opacity:0.30},500);
+}
+function FilterKazan() {
+	$('a.saintp').animate({opacity:0.30},500);
+	$('a.moscow').animate({opacity:0.30},500);
+	$('a.saratov').animate({opacity:0.30},500);
+	$('a.sochi').animate({opacity:0.30},500);
+	$('a.kazan').animate({opacity:1},500);
+}
+function ViewAll() {
+	$('a.saintp').animate({opacity:1},500);
+	$('a.moscow').animate({opacity:1},500);
+	$('a.saratov').animate({opacity:1},500);
+	$('a.sochi').animate({opacity:1},500);
+	$('a.kazan').animate({opacity:1},500);
+}
+</script>
+
+<link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Knewave' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+<div id="header_hotels">
+	<div id="line1"></div>
+	<div id="line2"></div>
+	<div id="logo_hotels">
+    <a href="index.html">
+		<h1 id="logo_1_hotels">HOTEL</h1>
+		<h1 id="logo_2_hotels">GUIDE</h1>
+        <h1 id="logo_2_hotels" style="font-size:25px; margin:-20px 0px 0px 100px; color:darkslateblue;">RU</h1>
+    </a>
+	</div>    
+</div>
+<div id="leftslidemenu">
+        <h2 onClick="FilterSaintP()">Санкт-Петербург</h2>
+        <h2 onClick="FilterMoscow()">Москва</h2>   
+        <h2 onClick="FilterSaratov()">Саратов</h2> 
+        <h2 onClick="FilterSochi()">Сочи</h2>  
+        <h2 onClick="FilterKazan()">Казань</h2>     
+        <h2 onClick="ViewAll()">Показать всё</h2>
+        <a href="index.html"><h2>На главную</h2></a>
+      <div id="butt" onClick="MenuSlide()"><img src="index_img/ham.png" width="70px" height="70px"></div>            
+</div>
+<div id="container">
+     <a href="russia/HotelSlovakia/hotel_inf.html" class="saratov"><div class="item"><img src="russia/HotelSlovakia/inf_img/1.jpg"><span>Гостиница Словакия, Саратов</span></div></a>    
+    <a href="russia/RodinaGrandHotelandSpa/hotel_inf.html" class="sochi"><div class="item"><img src="russia/RodinaGrandHotelandSpa/inf_img/1.jpg"><span>Родина Гранд Отель и Спа, Сочи</span></div></a> 
+    <a href="russia/Hermitage-theofficialhoteloftheStateMuseum/hotel_inf.html" class="saintp"><div class="item"><img src="russia/Hermitage-theofficialhoteloftheStateMuseum/inf_img/1.jpg"><span>Эрмитаж - официальная гостиница государственного музея, Санкт-Петербург</span></div></a>
+    <a href="russia/HotelRiviera/hotel_inf.html" class="kazan"><div class="item"><img src="russia/HotelRiviera/inf_img/1.jpg"><span>Отель Ривьера, Казань</span></div></a>
+    <a href="russia/ShalyapinPalaceHotel/hotel_inf.html" class="kazan"><div class="item"><img src="russia/ShalyapinPalaceHotel/inf_img/1.jpg"><span>Шаляпин Палас Отель, Казань</span></div></a>
+    <a href="russia/LotteHotelMoscow/hotel_inf.html" class="moscow"><div class="item"><img src="russia/LotteHotelMoscow/inf_img/1.jpg"><span>Лотте Отель Москва, Москва</span></div></a>
+    <a href="russia/HotelMetropol/hotel_inf.html" class="moscow"><div class="item"><img src="russia/HotelMetropol/inf_img/1.jpg"><span>Гостиница Метрополь, Москва</span></div></a>    
+     <a href="russia/BelmondoGrandHotelEurope/hotel_inf.html" class="saintp"><div class="item"><img src="russia/BelmondoGrandHotelEurope/inf_img/1.jpg"><span>Бельмонд Гранд Отель Европа, Санкт-Петербург</span></div></a>
+      <a href="russia/BoutiqueHotelGreenDeck/hotel_inf.html" class="sochi"><div class="item"><img src="russia/BoutiqueHotelGreenDeck/inf_img/1.jpg"><span>Бутик-отель Green Deck, Сочи</span></div></a>       
+     <a href="russia/PioneerLuxeHotel/hotel_inf.html" class="saratov"><div class="item"><img src="russia/PioneerLuxeHotel/inf_img/1.jpg"><span>Отель Пионер Люкс, Саратов</span></div></a>
+    
+</div>
+</body>
+</html>
