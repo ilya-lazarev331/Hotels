@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hotel</title>
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="../../gall_app/galleria-1.2.2.min.js"></script>
+<script>
+var x = false;
+function MenuSlide() {
+	if (x == false) {
+		x=true;
+		$('#leftslidemenu').animate({marginLeft:152},800).animate({opacity:0.95},500);
+	}
+	else {
+		x=false;
+		$('#leftslidemenu').animate({opacity:0.75},500).animate({marginLeft:-1},400);
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="leftslidemenu">
+        <a href="../../AShotels.html"><h2>К отелям</h2></a>
+        <a href="../../index.html"><h2>На главную</h2></a>
+      <div id="butt" onClick="MenuSlide()"><img src="../../index_img/ham.png" width="70px" height="70px"></div>            
+</div>
+<div class="HotelInfBlock">
+<h3 class="hotelname">Grand Hotel Beijing</h3>
+</div>
+<div class="content1">	
+<div id="galleria">
+            <img src="inf_img/1.jpg">
+            <img src="inf_img/2.jpg">
+            <img src="inf_img/3.jpg">
+            <img src="inf_img/4.jpg">
+            <img src="inf_img/5.jpg">
+            <img src="inf_img/6.jpg">
+            
+</div>
+</div>
+<div class="HotelInfBlock">
+<h5 style="font-size:17px;">Гранд-отель Beijing находится в удивительном месте в восточной части проспекта Чаньгань всего в нескольких шагах от площади Тяньаньмэнь и Запретного города. Этот великолепный 5-звездочный отель в архитектурном стиле династий Мин и Цин располагает крытым бассейном, сувенирным магазином и несколькими стильными ресторанами изысканной кухни. На всей территории отеля предоставляется бесплатный Wi-Fi.<br>
+Гранд-отель Beijing расположен в 5 минутах ходьбы от оживленной пешеходной улицы Ванфуцзин с торговыми центрами, местными ресторанами и развлекательными заведениями. Станции метро Tian’anmen East и Wangfujing (Линия 1) находятся менее чем в 6 минутах ходьбы от отеля, благодаря чему гости смогут легко добраться до большинства достопримечательностей города. Поездка до Международного аэропорта Шоуду занимает приблизительно 40 минут.<br>
+Номера оформлены в изящном стиле с деревянной мебелью и китайским антиквариатом. Все номера отличаются современным комфортом и удобствами и располагают телевизором с плоским экраном и кабельными/спутниковыми каналами, сейфом и гладильными принадлежностями. В номерах есть ванная комната с халатами и тапочками.<br>
+Гости могут поддерживать себя в форме, тренируясь в хорошо оборудованном фитнес-центре, расслабиться в сауне, а также заказать однодневные экскурсии в экскурсионном бюро или взять напрокат автомобиль, чтобы осмотреть этот очаровательный город. В отеле есть бизнес-центр и залы для проведения совещаний, которыми могут воспользоваться бизнес-туристы.<br>
+В гранд-отеле Beijing можно попробовать широкий ассортимент деликатесов из разных частей страны. В кафе Red Wall подают сытные спреды "шведский стол", а в ресторане Song Yuan - блюда японской кухни. Во второй половине дня гости могут отдохнуть с напитком в баре Fountain. <br>
+Это любимая часть города Пекин среди наших гостей согласно независимым отзывам.<br>
+Grand Hotel Beijing — принимает гостей с 8 мая 2013<br>
+Номеров в отеле: 217</h5>
+</div>
+<script>
+
+    Galleria.loadTheme('../../gall_app/galleria.classic.min.js');
+    $('#galleria').galleria();
+
+</script>
+</body>
+</html>

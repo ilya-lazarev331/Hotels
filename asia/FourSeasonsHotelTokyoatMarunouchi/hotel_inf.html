@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hotel</title>
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="../../gall_app/galleria-1.2.2.min.js"></script>
+<script>
+var x = false;
+function MenuSlide() {
+	if (x == false) {
+		x=true;
+		$('#leftslidemenu').animate({marginLeft:152},800).animate({opacity:0.95},500);
+	}
+	else {
+		x=false;
+		$('#leftslidemenu').animate({opacity:0.75},500).animate({marginLeft:-1},400);
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="leftslidemenu">
+        <a href="../../AShotels.html"><h2>К отелям</h2></a>
+        <a href="../../index.html"><h2>На главную</h2></a>
+      <div id="butt" onClick="MenuSlide()"><img src="../../index_img/ham.png" width="70px" height="70px"></div>            
+</div>
+<div class="HotelInfBlock">
+<h3 class="hotelname">Four Seasons Hotel Tokyo at Marunouchi</h3>
+</div>
+<div class="content1">	
+<div id="galleria">
+            <img src="inf_img/1.jpg">
+            <img src="inf_img/2.jpg">
+            <img src="inf_img/3.jpg">
+            <img src="inf_img/4.jpg">
+            <img src="inf_img/5.jpg">
+            <img src="inf_img/6.jpg">
+            
+</div>
+</div>
+<div class="HotelInfBlock">
+<h5 style="font-size:17px;">Роскошный отель Four Seasons Tokyo с прямым выходом к железнодорожному вокзалу Токио находится в районе Маруноути в самом центре оживленного города. Этот отель был включен в список 25 лучших отелей Японии по версии компании TripAdvisor в номинации Travelers' Choice Award 2014. К услугам гостей просторные номера, бесплатные термальные купальни, спа-салон с сауной и круглосуточная фитнес-студия. Предоставляется бесплатный Wi-Fi и трансфер от железнодорожного вокзала.<br>
+Прогулка от отеля Four Seasons до Императорского дворца занимает 5 минут, а до центрального района Гинза — 10 минут. Отель расположен в 20 минутах езды на поезде от районов Сибуя и Харадзюку, а также исторического квартала Асакуса. До популярного рыбного рынка Цукидзи и района Акихабара можно доехать за 10 минут.<br>
+Стильные дизайнерские номера отеля Marunouchi Four Seasons обставлены роскошной мебелью, создающей расслабляющую атмосферу. Номера оснащены такими современными удобствами, как встроенный 3D-телевизор с плоским экраном, проигрывателем Blu-Ray, системой объемного звучания и технологией Bluetooth. В ванной комнате установлена душевая кабина и большая ванна.<br>
+Гости могут заказать сеанс восстанавливающего массажа в спа-салоне, а дети — поиграть в бесплатные видеоигры в номере. В отеле предоставляются круглосуточные услуги консьержа и бесплатный прокат велосипедов. По предварительной договоренности допускается размещение с домашними животными.<br>
+С раннего утра до полуночи в баре-ресторане Motif, открытом в апреле 2015 года, подают изысканные блюда французской кухни, приготовленные из свежайших местных продуктов. Доставка еды и напитков в номер осуществляется круглосуточно. <br>
+Это любимая часть города Токио среди наших гостей согласно независимым отзывам.<br>
+Four Seasons Hotel Tokyo at Marunouchi — принимает гостей с 26 нояб. 2010<br>
+Номеров в отеле: 57, Сеть отелей: Four Seasons Hotels and Resorts</h5>
+</div>
+<script>
+
+    Galleria.loadTheme('../../gall_app/galleria.classic.min.js');
+    $('#galleria').galleria();
+
+</script>
+</body>
+</html>

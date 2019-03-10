@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hotel</title>
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="../../gall_app/galleria-1.2.2.min.js"></script>
+<script>
+var x = false;
+function MenuSlide() {
+	if (x == false) {
+		x=true;
+		$('#leftslidemenu').animate({marginLeft:152},800).animate({opacity:0.95},500);
+	}
+	else {
+		x=false;
+		$('#leftslidemenu').animate({opacity:0.75},500).animate({marginLeft:-1},400);
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="leftslidemenu">
+        <a href="../../AShotels.html"><h2>К отелям</h2></a>
+        <a href="../../index.html"><h2>На главную</h2></a>
+      <div id="butt" onClick="MenuSlide()"><img src="../../index_img/ham.png" width="70px" height="70px"></div>            
+</div>
+<div class="HotelInfBlock">
+<h3 class="hotelname">Park Hyatt Tokyo</h3>
+</div>
+<div class="content1">	
+<div id="galleria">
+            <img src="inf_img/1.jpg">
+            <img src="inf_img/2.jpg">
+            <img src="inf_img/3.jpg">
+            <img src="inf_img/4.jpg">
+            <img src="inf_img/5.jpg">
+            <img src="inf_img/6.jpg">
+            
+</div>
+</div>
+<div class="HotelInfBlock">
+<h5 style="font-size:17px;">Окна просторных номеров отеля Park Hyatt Tokyo расположены высоко над оживленными улицами Синдзюку. Из номеров открывается прекрасный вид на гору Фудзи и Синдзюку. В отеле есть крытый бассейн, а также ресторан на 52 этаже.<br>
+Номера в отеле Park Hyatt Tokyo могут похвастаться оформлением с деревянными панелями Хоккайдо и бельем из египетского хлопка. Гости могут выпить в баре с закусками и напитками в номере, а также расслабиться в глубокой ванне или завернуться в пушистый халат и посмотреть один из фильмов, которые предлагаются по запросу.<br>
+До Центрального парка - 3 минуты ходьбы от отеля. Железнодорожный вокзал Синдзюку находится в 15 минутах ходьбы от отеля. Парк Синдзюку Гиоен расположен в 20 минутах ходьбы.<br>
+Гости могут наслаждаться массажем в спа-салоне Club on the Park или позаниматься спортом в тренажерном зале, где есть окна от пола до потолка. К вашим услугам обширная библиотека отеля.<br>
+Из ресторана New York Grill на 52 этаже открывается превосходный вид на горизонт. Гостям подаются современные блюда японской и французской кухни. Также вы можете посетить стильное кафе. <br>
+Park Hyatt Tokyo — принимает гостей с 26 окт. 2009<br>
+Номеров в отеле: 177, Сеть отелей: Park Hyatt</h5>
+</div>
+<script>
+
+    Galleria.loadTheme('../../gall_app/galleria.classic.min.js');
+    $('#galleria').galleria();
+
+</script>
+</body>
+</html>

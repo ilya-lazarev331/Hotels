@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hotel</title>
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="../../gall_app/galleria-1.2.2.min.js"></script>
+<script>
+var x = false;
+function MenuSlide() {
+	if (x == false) {
+		x=true;
+		$('#leftslidemenu').animate({marginLeft:152},800).animate({opacity:0.95},500);
+	}
+	else {
+		x=false;
+		$('#leftslidemenu').animate({opacity:0.75},500).animate({marginLeft:-1},400);
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="leftslidemenu">
+        <a href="../../AShotels.html"><h2>К отелям</h2></a>
+        <a href="../../index.html"><h2>На главную</h2></a>
+      <div id="butt" onClick="MenuSlide()"><img src="../../index_img/ham.png" width="70px" height="70px"></div>            
+</div>
+<div class="HotelInfBlock">
+<h3 class="hotelname">Jumeirah Dar Al Masyaf - Madinat Jumeirah</h3>
+</div>
+<div class="content1">	
+<div id="galleria">
+            <img src="inf_img/1.jpg">
+            <img src="inf_img/2.jpg">
+            <img src="inf_img/3.jpg">
+            <img src="inf_img/4.jpg">
+            <img src="inf_img/5.jpg">
+            <img src="inf_img/6.jpg">
+            
+</div>
+</div>
+<div class="HotelInfBlock">
+<h5 style="font-size:17px;">Set amongst tranquil gardens, waterways, exclusive pools and the resort’s private beach, the intimate and exquisite summerhouses of Jumeirah Dar Al Masyaf offers newly refurbished elegant and spacious guestrooms and courtyards, personalised and generous butler service and an understated Arabian luxury experience.<br>
+The summerhouses offer an exquisitely designed hideaway, large terraces overlooking the fresh seawater ways and high tech bedroom facilities. Jumeirah Dar Al Masyaf's luxurious guest rooms and suites are all located in Arabian-styled houses. All of the spacious rooms are decorated with furnishings of authentic Arabic style, and have luxury bathrooms.<br>
+Facilities of Jumeirah Dar Al Masyaf include a world class golf, Sinbad’s Kids Club, onsite Madinat Theatre, Madinat Jumeirah’s own private beach, watersports, tennis and luxury yachts.<br>
+With over 40 world-class restaurants, bars and lounges to choose from, you’ll enjoy a dizzying choice of dining options – each with a distinct theme, location and style. Whether you feel like an evening of terrific Thai or a night on the tiles with the finest cocktails, you’ll find your tastes fully satisfied at Madinat Jumeirah.<br>
+The resort also provides extensive leisure and health facilities including Talise Spa and Talise Fitness, indoor and outdoor pools, as well as Souk Madinat Jumeirah, a traditional retail and dining experience showcasing the best of Arabia.<br>
+Dubai International Airport is located 25 minutes away from the hotel. The property provides a complimentary shuttle service to Wild Wadi, Madinat Jumeirah, Jumeirah Beach Hotel, Burj Khalifa/Dubai Downtown and DIFC. Free parking is possible at the hotel. <br>
+Мы говорим на вашем языке!<br>
+Jumeirah Dar Al Masyaf - Madinat Jumeirah — принимает гостей с 22 дек. 2009<br>
+Номеров в отеле: 283, Сеть отелей: Jumeirah</h5>
+</div>
+<script>
+
+    Galleria.loadTheme('../../gall_app/galleria.classic.min.js');
+    $('#galleria').galleria();
+
+</script>
+</body>
+</html>

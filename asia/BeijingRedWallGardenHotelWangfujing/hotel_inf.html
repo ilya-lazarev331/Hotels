@@ -1,0 +1,68 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hotel</title>
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="../../gall_app/galleria-1.2.2.min.js"></script>
+<script>
+var x = false;
+function MenuSlide() {
+	if (x == false) {
+		x=true;
+		$('#leftslidemenu').animate({marginLeft:152},800).animate({opacity:0.95},500);
+	}
+	else {
+		x=false;
+		$('#leftslidemenu').animate({opacity:0.75},500).animate({marginLeft:-1},400);
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="leftslidemenu">
+        <a href="../../AShotels.html"><h2>К отелям</h2></a>
+        <a href="../../index.html"><h2>На главную</h2></a>
+      <div id="butt" onClick="MenuSlide()"><img src="../../index_img/ham.png" width="70px" height="70px"></div>            
+</div>
+<div class="HotelInfBlock">
+<h3 class="hotelname">Beijing Red Wall Garden Hotel Wangfujing</h3>
+</div>
+<div class="content1">	
+<div id="galleria">
+            <img src="inf_img/1.jpg">
+            <img src="inf_img/2.jpg">
+            <img src="inf_img/3.jpg">
+            <img src="inf_img/4.jpg">
+            <img src="inf_img/5.jpg">
+            <img src="inf_img/6.jpg">
+            
+</div>
+</div>
+<div class="HotelInfBlock">
+<h5 style="font-size:17px;">
+ Отель Beijing Red Wall Garden находится в тихом внутреннем дворе в историческом районе Хутун. Номера оформлены в традиционном китайском стиле и располагают бесплатным доступом в Интернет. Гостям предоставляются круглосуточно услуги дворецкого. В художественной галерее на территории отеля выставлены произведения местных художников. Кроме того, здесь периодически проходят выступления Пекинской оперы, оперы Куньцюй и китайского Театра теней.<br>
+Отель Beijing Red Wall Garden находится в центре Пекина, в 5 минутах ходьбы от станции метро Dengshikou (линия 5). Расстояние до таких популярных достопримечательностей, как площадь Тяньаньмэнь, улица Ванфуцзин и Запретный город, составляет 3 км. До Музея Хутун - всего 200 метров.<br>
+Комфортабельные номера тщательно обставлены классической мебелью, украшены изысканными тканями и располагают удобными кроватями DUX, деревянным полом, комфортными креслами и телевизором с плоским экраном и кабельными каналами. Для удобства гостей предоставляется холодильник.<br>
+В ресторане отеля Red Wall подают блюда китайской и западной кухни. Закуски и коктейли можно заказать в кафе Hutong, а также в барах Sunny Tea и Garden. Производится доставка еды в номер.<br>
+Сотрудники экскурсионного бюро организуют однодневные туры. Гости могут арендовать автомобиль или велосипед для посещения Пекина. Кроме того, можно прогуляться по саду или почитать в тихой библиотеке. <br>
+Дунчэн — отличный выбор, если вам интересны памятники, достопримечательности и история. <br>
+Это любимая часть города Пекин среди наших гостей согласно независимым отзывам. <br>
+Beijing Red Wall Garden Hotel Wangfujing — принимает гостей с 23 июля 2010<br>
+Номеров в отеле: 40 
+</h5>
+</div>
+<script>
+
+    Galleria.loadTheme('../../gall_app/galleria.classic.min.js');
+    $('#galleria').galleria();
+
+</script>
+</body>
+</html>

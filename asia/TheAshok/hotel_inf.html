@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hotel</title>
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="../../gall_app/galleria-1.2.2.min.js"></script>
+<script>
+var x = false;
+function MenuSlide() {
+	if (x == false) {
+		x=true;
+		$('#leftslidemenu').animate({marginLeft:152},800).animate({opacity:0.95},500);
+	}
+	else {
+		x=false;
+		$('#leftslidemenu').animate({opacity:0.75},500).animate({marginLeft:-1},400);
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="leftslidemenu">
+        <a href="../../AShotels.html"><h2>К отелям</h2></a>
+        <a href="../../index.html"><h2>На главную</h2></a>
+      <div id="butt" onClick="MenuSlide()"><img src="../../index_img/ham.png" width="70px" height="70px"></div>            
+</div>
+<div class="HotelInfBlock">
+<h3 class="hotelname">The Ashok</h3>
+</div>
+<div class="content1">	
+<div id="galleria">
+            <img src="inf_img/1.jpg">
+            <img src="inf_img/2.jpg">
+            <img src="inf_img/3.jpg">
+            <img src="inf_img/4.jpg">
+            <img src="inf_img/5.jpg">
+            <img src="inf_img/6.jpg">
+            
+</div>
+</div>
+<div class="HotelInfBlock">
+<h5 style="font-size:17px;">Отель The Ashok расположен в столице Индии. К услугам гостей открытый бассейн, оздоровительный спа-салон и фитнес-центр. Также предоставляется бесплатный WiFi.<br>
+Все номера отеля оснащены телевизором, кондиционером, мини-баром и электрическим чайником. Собственная ванная комната с душем укомплектована бесплатными туалетно-косметическими принадлежностями и тапочками. В числе прочих удобств — кабельное телевидение и гостиная зона.<br>
+В отеле The Ashok в распоряжении гостей билетная касса, экскурсионное бюро, общий лаундж и пункт обмена валюты. На территории обустроена бесплатная парковка. Кроме того, гости могут пользоваться запирающимися шкафчиками.<br>
+Отель находится в 2 км от Раштрапати-Бхаван, официальной резиденции президента Индии, и в 5 км от монумента «Ворота Индии». Расстояние до железнодорожного вокзала Нью-Дели составляет 9 км от отеля, а до международного аэропорта Дели — 15 км.<br>
+В ресторане Oudh гости могут отведать блюда индийской кухни, в Frontier подают блюда индийской кухни северо-западного региона, в Sagar Ratna — фирменные блюда южного региона Индии, в Shraman — вегетарианские блюда джайнов, в Nom-Nom — пан-азиатские деликатесы, а блюда средиземноморской кухни готовят в Zerruco. По запросу осуществляется доставка еды и напитков в номер. <br>
+The Ashok — принимает гостей с 16 сент. 2014<br>
+Номеров в отеле: 550, Сеть отелей: ITDC Group</h5>
+</div>
+<script>
+
+    Galleria.loadTheme('../../gall_app/galleria.classic.min.js');
+    $('#galleria').galleria();
+
+</script>
+</body>
+</html>

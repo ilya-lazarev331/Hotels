@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hotel</title>
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="../../gall_app/galleria-1.2.2.min.js"></script>
+<script>
+var x = false;
+function MenuSlide() {
+	if (x == false) {
+		x=true;
+		$('#leftslidemenu').animate({marginLeft:152},800).animate({opacity:0.95},500);
+	}
+	else {
+		x=false;
+		$('#leftslidemenu').animate({opacity:0.75},500).animate({marginLeft:-1},400);
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="leftslidemenu">
+        <a href="../../AShotels.html"><h2>К отелям</h2></a>
+        <a href="../../index.html"><h2>На главную</h2></a>
+      <div id="butt" onClick="MenuSlide()"><img src="../../index_img/ham.png" width="70px" height="70px"></div>            
+</div>
+<div class="HotelInfBlock">
+<h3 class="hotelname">The Leela Palace New Delhi</h3>
+</div>
+<div class="content1">	
+<div id="galleria">
+            <img src="inf_img/1.jpg">
+            <img src="inf_img/2.jpg">
+            <img src="inf_img/3.jpg">
+            <img src="inf_img/4.jpg">
+            <img src="inf_img/5.jpg">
+            <img src="inf_img/6.jpg">
+            
+</div>
+</div>
+<div class="HotelInfBlock">
+<h5 style="font-size:17px;">Отель Leela Palace New Delhi находится в дипломатическом анклаве Нью-Дели. В нем изысканно сочетается архитектура Лаченса и культура королевской Индии. К услугам гостей великолепный спа-салон, 4 ресторана и бесплатная парковка.<br>
+В элегантно оформленных и обставленных деревянной мебелью номерах есть кондиционер, телевизор высокой четкости с плоским экраном, DVD-плеер и окна от пола до потолка. В ванной комнате установлен второй телевизор с плоским экраном. В выключенном состоянии он служит зеркалом.<br>
+От отеля Leela Palace New Delhi — менее 10 минут езды до Ворот Индии. Международный аэропорт имени Индиры Ганди находится в 15 км, а внутренний аэропорт — в 13 км.<br>
+В эксклюзивном спа-центре ESPA предлагается аюрведическая спа-программа для женщин и мужчин, а из бассейна на крыше с регулируемой температурой открывается панорамный вид на городской пейзаж. У круглосуточной стойки регистрации можно взять напрокат компьютер или автомобиль.<br>
+Ресторан Qube находится в современном стеклянном здании. Здесь подают «шведский стол» из блюд интернациональной и индийской кухни, которые готовят в присутствии клиентов. Также в отеле работают превосходные рестораны Le Cirque и MEGU from New York. В ресторане Jamavar можно отведать блюда индийской кухни. В 2 барах отеля предлагаются напитки. <br>
+The Leela Palace New Delhi — принимает гостей с 3 авг. 2011<br>
+Номеров в отеле: 254, Сеть отелей: The Leela</h5>
+</div>
+<script>
+
+    Galleria.loadTheme('../../gall_app/galleria.classic.min.js');
+    $('#galleria').galleria();
+
+</script>
+</body>
+</html>

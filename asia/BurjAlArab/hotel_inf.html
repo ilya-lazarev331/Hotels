@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hotel</title>
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="../../gall_app/galleria-1.2.2.min.js"></script>
+<script>
+var x = false;
+function MenuSlide() {
+	if (x == false) {
+		x=true;
+		$('#leftslidemenu').animate({marginLeft:152},800).animate({opacity:0.95},500);
+	}
+	else {
+		x=false;
+		$('#leftslidemenu').animate({opacity:0.75},500).animate({marginLeft:-1},400);
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="leftslidemenu">
+        <a href="../../AShotels.html"><h2>К отелям</h2></a>
+        <a href="../../index.html"><h2>На главную</h2></a>
+      <div id="butt" onClick="MenuSlide()"><img src="../../index_img/ham.png" width="70px" height="70px"></div>            
+</div>
+<div class="HotelInfBlock">
+<h3 class="hotelname">Burj Al Arab</h3>
+</div>
+<div class="content1">	
+<div id="galleria">
+            <img src="inf_img/1.jpg">
+            <img src="inf_img/2.jpg">
+            <img src="inf_img/3.jpg">
+            <img src="inf_img/4.jpg">
+            <img src="inf_img/5.jpg">
+            <img src="inf_img/6.jpg">
+            
+</div>
+</div>
+<div class="HotelInfBlock">
+<h5 style="font-size:17px;">Отель Burj Al Arab расположен на собственном острове. В распоряжении гостей фешенебельные люксы с видом на море, 9 фирменных ресторанов и роскошный спа-салон с полным ассортиментом услуг. В отеле организуют трансфер на автомобиле крупнейшего в мире парка Роллс-Ройсов с личным водителем или на вертолете.<br>
+Гостям предлагаются люксы с французскими окнами с панорамным видом на Персидский залив, планшетом iPad с 4-каратным золотым покрытием, бесплатным Wi-Fi, компьютером iMac с 21-дюймовым экраном и широкоэкранным интерактивным телевизором с высокой четкостью изображения. В числе прочих удобств док-станция для iPhone марки Bose и медиацентр.<br>
+В изысканном ресторане Al Mahara отеля Burj Al Arab подают фирменные блюда из морепродуктов. Одна из стен ресторана выполнена из стекла, за которым находится огромный аквариум. Бар с панорамным видом расположен на высоте 200 метров над уровнем моря. Ресторан Al Muntaha прекрасно подходит для послеобеденного чая и коктейлей.<br>
+Все процедуры в спа-салоне Talise специально подобраны и тщательно разработаны с использованием лучшей косметической продукции в мире. В зонах отдыха для мужчин и женщин обустроена аквазона для релаксации. Помимо этого, к услугам гостей отдельные крытые пейзажные бассейны, гидромассажная ванна и процедурные комнаты с видом на Персидский залив, а также сауны, паровые бани и мини-бассейны.<br>
+В отеле гостям предлагается бесплатный трансфер до аквапарка Wild Wadi, курортного комплекса Madinat Jumeirah, отеля Jumeirah Beach, башни-небоскреба Бурдж Халифа/района Даунтаун-Дубай и Дубайского Международного Финансового Центра (DIFC). Гости могут воспользоваться принадлежностями для водных видов спорта в аквапарке Wild Wadi, расположенном в 5 минутах ходьбы (через мост). До рынка Мадинат-Джумейра можно дойти за 15 минут. <br>
+Мы говорим на вашем языке!<br>
+Burj Al Arab — принимает гостей с 12 марта 2010<br>
+Номеров в отеле: 202, Сеть отелей: Jumeirah</h5>
+</div>
+<script>
+
+    Galleria.loadTheme('../../gall_app/galleria.classic.min.js');
+    $('#galleria').galleria();
+
+</script>
+</body>
+</html>

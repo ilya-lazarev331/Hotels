@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hotel</title>
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="../../gall_app/galleria-1.2.2.min.js"></script>
+<script>
+var x = false;
+function MenuSlide() {
+	if (x == false) {
+		x=true;
+		$('#leftslidemenu').animate({marginLeft:152},800).animate({opacity:0.95},500);
+	}
+	else {
+		x=false;
+		$('#leftslidemenu').animate({opacity:0.75},500).animate({marginLeft:-1},400);
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="leftslidemenu">
+        <a href="../../AShotels.html"><h2>К отелям</h2></a>
+        <a href="../../index.html"><h2>На главную</h2></a>
+      <div id="butt" onClick="MenuSlide()"><img src="../../index_img/ham.png" width="70px" height="70px"></div>            
+</div>
+<div class="HotelInfBlock">
+<h3 class="hotelname">The Peninsula Bangkok</h3>
+</div>
+<div class="content1">	
+<div id="galleria">
+            <img src="inf_img/1.jpg">
+            <img src="inf_img/2.jpg">
+            <img src="inf_img/3.jpg">
+            <img src="inf_img/4.jpg">
+            <img src="inf_img/5.jpg">
+            <img src="inf_img/6.jpg">
+            
+</div>
+</div>
+<div class="HotelInfBlock">
+<h5 style="font-size:17px;">Отель Peninsula Bangkok расположен на берегу реки Чаопхрайя. К услугам гостей роскошные номера со всеми удобствами и видом на реку. В этом отеле, оборудованном для гостей с ограниченными физическими возможностями, имеется открытый бассейн и фитнес-центр. Во всех помещениях предлагается бесплатный Wi-Fi.<br>
+Гостям предоставляется бесплатный 5-минутный трансфер на пароме до станции надземного метро Saphan Taksin. Международный аэропорт Суварнабхуми находится в 45 минутах езды от отеля Peninsula, а Большой дворец и храм Ват-Арун - в 20 минутах езды.<br>
+В номерах в вашем распоряжении гардеробная, диван и гостиная зона, а также шторы с электронным управлением, декоративная подсветка и телевизор с плоским экраном и кабельными/спутниковыми каналами. В собственной ванной комнате с ванной и душем предоставляются бесплатные туалетно-косметические принадлежности. Ежедневно в номер доставляют корзину с фруктами.<br>
+Также гости могут посещать спа-салон, сауну и пользоваться услугами бизнес-центра, обмена валюты, пункта проката автомобилей и прачечной. Сотрудники туристического бюро и билетной кассы помогут вам заказать экскурсии и поездки.<br>
+В ресторане The Lobby сервируют завтрак, обед и ужин. В стильном ресторане Mei Jiang на обед и ужин предлагаются превосходные блюда кантонской кухни. В ресторане Thiptara, оформленном в старинном тайском стиле, можно отведать за ужином аутентичные деликатесы тайской кухни, любуясь видом на реку. <br>
+The Peninsula Bangkok — принимает гостей с 28 июня 2012<br>
+Номеров в отеле: 370, Сеть отелей: The Peninsula Hotels</h5>
+</div>
+<script>
+
+    Galleria.loadTheme('../../gall_app/galleria.classic.min.js');
+    $('#galleria').galleria();
+
+</script>
+</body>
+</html>

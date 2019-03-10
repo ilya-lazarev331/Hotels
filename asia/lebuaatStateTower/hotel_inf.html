@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hotel</title>
+<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="../../gall_app/galleria-1.2.2.min.js"></script>
+<script>
+var x = false;
+function MenuSlide() {
+	if (x == false) {
+		x=true;
+		$('#leftslidemenu').animate({marginLeft:152},800).animate({opacity:0.95},500);
+	}
+	else {
+		x=false;
+		$('#leftslidemenu').animate({opacity:0.75},500).animate({marginLeft:-1},400);
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="leftslidemenu">
+        <a href="../../AShotels.html"><h2>К отелям</h2></a>
+        <a href="../../index.html"><h2>На главную</h2></a>
+      <div id="butt" onClick="MenuSlide()"><img src="../../index_img/ham.png" width="70px" height="70px"></div>            
+</div>
+<div class="HotelInfBlock">
+<h3 class="hotelname">lebua at State Tower</h3>
+</div>
+<div class="content1">	
+<div id="galleria">
+            <img src="inf_img/1.jpg">
+            <img src="inf_img/2.jpg">
+            <img src="inf_img/3.jpg">
+            <img src="inf_img/4.jpg">
+            <img src="inf_img/5.jpg">
+            <img src="inf_img/6.jpg">
+            
+</div>
+</div>
+<div class="HotelInfBlock">
+<h5 style="font-size:17px;">Роскошный отель Lebua at State Tower с видом на реку Чао Прайя расположен в районе Бангкока Силом. К услугам гостей ресторан на крыше и бесплатный трансфер до станции надземного метро Saphan Taksin. На всей территории работает бесплатный Wi-Fi.<br>
+Из окон современных люксов открывается прекрасный вид на город и реку. В числе удобств люксов телевизор, DVD-плеер, собственная большая ванная комната с бесплатными туалетно-косметическими принадлежностями, мини-кухня и гостиная зона.<br>
+Гости могут поплавать в открытом бассейне в форме лагуны, заказать массажные процедуры, расслабиться в сауне и позаниматься в хорошо оборудованном тренажерном зале.<br>
+В ресторане Sirocco под открытым небом можно отведать блюда средиземноморской кухни, любуясь впечатляющим видом на город. В баре Sky подают коктейли и напитки. Ежедневный завтрак «шведский стол» сервируют в кафе у бассейна Mozu. Также в отеле работают бар Breeze и рестораны Mezzaluna и Distil.<br>
+Расстояние от отеля Lebua at State Tower до аэропорта Суварнабхуми составляет 35 км. <br>
+lebua at State Tower — принимает гостей с 8 июня 2009<br>
+Номеров в отеле: 357</h5>
+</div>
+<script>
+
+    Galleria.loadTheme('../../gall_app/galleria.classic.min.js');
+    $('#galleria').galleria();
+
+</script>
+</body>
+</html>
